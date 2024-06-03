@@ -1,0 +1,13 @@
+{
+  "name": "@design-system/scripts",
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn build:js",
+    "build:js": "node builder.js"
+  },
+  "devDependencies": {
+    "esbuild": "0.18.20"
+  }
+}
