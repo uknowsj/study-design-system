@@ -1,13 +1,8 @@
-/**
- * theme.css
- * :root {
- *  --gray-900: #12222
- * }
- */
 import * as theme from "../dist/index.js";
 
-export const createCss = () => {
-  console.log("theme", theme);
-};
+/**
+ * tokens로 부터 css 파일 만드는 함수
+ */
+export const createCss = () => {};
 
 createCss();

@@ -18,5 +18,8 @@
   "devDependencies": {
     "@types/node": "^20.14.0",
     "esbuild": "0.18.20"
+  },
+  "dependencies": {
+    "@design-system/scripts": "workspace:^"
   }
 }
