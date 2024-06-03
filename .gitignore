@@ -4,11 +4,13 @@
 
 .pnp.*
 .yarn/install-state.gz
+!.yarn/cache
 !.yarn/patches
 !.yarn/plugins
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
 **/packge-lock.json
 **/node_modules/
  
