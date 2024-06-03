@@ -1,0 +1,22 @@
+{
+  "name": "@design-system/themes",
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "build": "yarn build:js",
+    "build:js": "node build.js"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "esbuild": "0.18.20"
+  }
+}
