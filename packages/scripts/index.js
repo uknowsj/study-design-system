@@ -1,6 +1,6 @@
 const { build, context } = require("esbuild");
 
-async function buildPackage({ entryPoints = ["src/index.ts"], pkg, config }) {
+async function buildPackage({ entryPoints = ["index.ts"], pkg, config }) {
   const watch = process.argv.includes("--watch");
 
   const external = [

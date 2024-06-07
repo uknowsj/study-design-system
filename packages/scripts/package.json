@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "files": [
-    "builder.js"
+    "index.js"
   ],
   "devDependencies": {
     "esbuild": "0.18.20"
