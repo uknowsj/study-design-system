@@ -5,6 +5,14 @@
   "license": "MIT",
   "packageManager": "yarn@4.1.1",
   "workspaces": [
-    "packages/*"
-  ]
+    "packages/**/*",
+    "services/**/*"
+  ],
+  "scripts": {
+    "themes": "yarn workspace @design-system/themes",
+    "scripts": "yarn workspace @@design-system/scripts"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
 }
