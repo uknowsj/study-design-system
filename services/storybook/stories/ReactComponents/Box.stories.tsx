@@ -7,4 +7,6 @@ export default {
   tags: ["autodocs"],
 };
 
-export const BoxStory = {};
+export const BoxStory = {
+  args: { as: "button", className: "test" },
+};
