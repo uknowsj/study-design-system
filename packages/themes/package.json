@@ -9,15 +9,18 @@
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
       "require": "./dist/index.cjs"
-    }
+    },
+    "./theme.css": "./dist/theme.css"
   },
   "scripts": {
-    "build": "yarn build:js",
-    "build:js": "node build.js"
+    "build": "yarn build:js & yarn build:type",
+    "build:js": "node build.js",
+    "build:type": "yarn tsc --emitDeclarationOnly"
   },
   "devDependencies": {
     "@types/node": "^20.14.0",
-    "esbuild": "0.18.20"
+    "esbuild": "0.18.20",
+    "typescript": "^5.4.5"
   },
   "dependencies": {
     "@design-system/scripts": "workspace:^"

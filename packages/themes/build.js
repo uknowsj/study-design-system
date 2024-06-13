@@ -1,22 +1,4 @@
-import esbuild from "esbuild";
+import buildPackage from "@design-system/scripts";
+import pkg from "./package.json" assert { type: "json" };
 
-const watch = process.argv.includes("--watch");
-const baseConfig = {
-  entryPoints: ["src/index.js"],
-  outdir: "dist",
-  bundle: true,
-  minify: true,
-  watch,
-};
-esbuild.build({
-  ...baseConfig,
-  format: "esm",
-});
-
-esbuild.build({
-  ...baseConfig,
-  format: "cjs",
-  outExtension: {
-    ".js": ".cjs",
-  },
-});
+buildPackage({ pkg });
