@@ -1908,7 +1908,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@design-system/react-components-box@workspace:packages/react/components/box":
+"@design-system/react-components-box@workspace:^, @design-system/react-components-box@workspace:packages/react/components/box":
   version: 0.0.0-use.local
   resolution: "@design-system/react-components-box@workspace:packages/react/components/box"
   dependencies:
@@ -1940,6 +1940,8 @@ __metadata:
   resolution: "@design-system/storybook@workspace:services/storybook"
   dependencies:
     "@chromatic-com/storybook": "npm:^1.5.0"
+    "@design-system/react-components-box": "workspace:^"
+    "@design-system/themes": "workspace:^"
     "@storybook/addon-essentials": "npm:^8.1.6"
     "@storybook/addon-interactions": "npm:^8.1.6"
     "@storybook/addon-links": "npm:^8.1.6"

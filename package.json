@@ -10,7 +10,8 @@
   ],
   "scripts": {
     "themes": "yarn workspace @design-system/themes",
-    "scripts": "yarn workspace @@design-system/scripts"
+    "scripts": "yarn workspace @design-system/scripts",
+    "dev:storybook": "yarn workspace @design-system/storybook storybook"
   },
   "devDependencies": {
     "typescript": "^5.4.5"
