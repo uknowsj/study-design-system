@@ -16,7 +16,8 @@
   "scripts": {
     "build": "yarn build:js & yarn build:type",
     "build:js": "node build.js",
-    "build:type": "yarn tsc --emitDeclarationOnly"
+    "build:type": "yarn tsc --emitDeclarationOnly",
+    "dev": "yarn build:js --watch && yarn build:type --watch"
   },
   "devDependencies": {
     "@design-system/scripts": "workspace:^",
